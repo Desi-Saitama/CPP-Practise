@@ -8,6 +8,11 @@ private:
 	char level;
 
 public:
+
+	Hero(int health){
+		this->health = health;
+	}
+
 	void print(){
 		cout <<level<<endl;
 	}
@@ -22,8 +27,6 @@ public:
 };
 
 int main(){
-	Hero Raavan;
-	Raavan.setHealth(100);
+	Hero Raavan(100);
 	cout<<Raavan.getHealth()<<endl;
-
 }
